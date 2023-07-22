@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color:#1D1D23;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main{
+     margin-top: 40px;  
+     text-align: center;
+}
+.main h1{
+    font-weight: 400;
+    font-size: 25px;
+}
+.time-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+    background-color: #34344A;
+    padding: 25px;
+    margin: 40px 0px;
+    border-radius: 14px;
+}
+.time-content #hoursDisplay , #minuteDisplay , #secondDisplay{
+    font-size: 30px;
+}
+.time-content button {
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    width: 80px;
+    border-radius: 20px;
+    background-color: yellow;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(52, 52, 52);
+    color: #ffe600;
+    border:1px solid #ffe600;
+    transition: all ease 0.3s;
+}
+.current-text{
+    font-size: 15px;
+    background-color: #39393E;
+    width: 300px;
+    margin-left: 90px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.main p{
+    margin-top: 40px;
+    margin-left: 15px;
+}
+u{
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+input{
+    width: 46px;
+    height: 28px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+input::placeholder{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.added-div .time-left{
+    font-size: 30px;
+}
+.delete-btn , .stop-btn{
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    width: 80px;
+    border-radius: 20px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.timer.timer-ended .time-left{
+    display: inline;
+    font-size: 30px;
+}
+.timer.timer-ended .time-over{
+    display: block;
+}
+.delete-btn{
+    display: inline-block;
+}
+.stop-btn{
+    display: none;
+}
+.timer.timer-ended{
+    color: black;
+    display: flex;
+    background-color: #ffe600; /* Light yellow color */
+}
+.timer.timer-ended button{
+    color: white;
+    background-color:rgb(63, 63, 63);
+}
+.timer.timer-ended .time-left{
+    font-size: 25px;
+    position: relative;
+    left: 150px;
+}
+.timer.timer-ended #timeLeftText{
+    display: none;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+    padding: 20px;
+    margin: 42px 0px;
+    border-radius: 14px;
+    background-color: #34344A;
+}
+.no-timers-message{
+    margin-top: 30px;
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: 300;
+    text-align: center;
+    word-spacing: 2px;
+}
